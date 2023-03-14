@@ -1,0 +1,165 @@
+/*cabecalho*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 1.75rem;
+    align-items: center;
+
+}
+
+/*categorias*/
+.categorias__lista{
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+    
+}
+
+/*destaques*/
+.destaques{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    column-gap: 1.5rem;
+}
+
+.destaques__barra{
+    flex-grow: 1;
+}
+
+/*eventos*/
+.eventos__lista {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.eventos__item {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+/*agenda*/
+.agenda__lista {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+    justify-content: center;
+}
+
+.agenda__item{
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+/*rodape*/
+
+.rodape{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__logo{
+    align-self: end;
+}
+
+@media (min-width: 720px) {
+    /*cabecalho*/
+        .menu{
+            column-gap: 2.5rem;
+        }
+
+    /*categorias*/
+    .categorias__lista{
+        flex-wrap: wrap;
+        column-gap: 1.5rem;
+    }
+
+     /*categoria*/
+     .categorias__imagem{
+        flex-grow: 1;
+    }
+
+     /*categoria*/
+     .categorias__imagem{
+        flex-grow: 1;
+        
+        height: 500px;
+    }
+
+
+    /*eventos*/
+    .eventos__lista{
+        justify-content: end;
+    }
+
+    /*agenda*/
+    .agenda__lista{
+        justify-content: end;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    /*cabecalho*/
+    .menu__item:nth-child(1){
+        order: 1;
+    }
+
+    .menu__item:nth-child(2){
+        order: 3;
+    }
+
+    .menu__item:nth-child(3){
+        order: 4;
+    }
+
+    .menu__item:nth-child(4){
+        order: 5;
+    }
+
+    .menu__item:nth-child(5){
+        order: 2;
+    }
+    
+}
+
+@media (min-width: 1920px) {
+
+    /*eventos*/
+    .eventos__lista {
+        flex-wrap: wrap;
+        column-gap: .30rem;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .eventos__item {
+        flex-wrap: wrap;
+        flex-grow: 1;
+        max-width: 200px;
+            
+    }
+
+    /*agenda*/
+    .agenda__lista {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .agenda__item{
+        flex-grow: 1;
+        max-width: 250px;
+        justify-content: end;
+        max-height: fit-content;
+    }
+
+
+   
+}
